@@ -124,6 +124,22 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: startPoint
+      value: 
+      objectReference: {fileID: 2015083890}
+    - target: {fileID: 0}
+      propertyPath: endPoint
+      value: 
+      objectReference: {fileID: 420522535}
+    - target: {fileID: 11441212, guid: d7a0641d3a09538458e059adb079a946, type: 2}
+      propertyPath: startPoint
+      value: 
+      objectReference: {fileID: 2015083890}
+    - target: {fileID: 11441212, guid: d7a0641d3a09538458e059adb079a946, type: 2}
+      propertyPath: endPoint
+      value: 
+      objectReference: {fileID: 420522535}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d7a0641d3a09538458e059adb079a946, type: 2}
   m_IsPrefabParent: 0
@@ -170,9 +186,99 @@ Prefab:
       propertyPath: m_Name
       value: Grass (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: startPoint
+      value: 
+      objectReference: {fileID: 2015083890}
+    - target: {fileID: 0}
+      propertyPath: endPoint
+      value: 
+      objectReference: {fileID: 420522535}
+    - target: {fileID: 11441212, guid: d7a0641d3a09538458e059adb079a946, type: 2}
+      propertyPath: startPoint
+      value: 
+      objectReference: {fileID: 2015083890}
+    - target: {fileID: 11441212, guid: d7a0641d3a09538458e059adb079a946, type: 2}
+      propertyPath: endPoint
+      value: 
+      objectReference: {fileID: 420522535}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d7a0641d3a09538458e059adb079a946, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &242063430
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 242063432}
+  - 114: {fileID: 242063431}
+  m_Layer: 0
+  m_Name: 'Mountain2Spawner '
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &242063431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 242063430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e18ca5b9358ff5489e53fed095bb109, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabToSpawn: {fileID: 453334, guid: da2f4a9a333c69e4980c6c23da265d4a, type: 2}
+  spawnCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 15
+      inSlope: 20
+      outSlope: 20
+      tangentMode: 10
+    - time: 0.25
+      value: 20
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 10
+    - time: 0.5
+      value: 15
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 10
+    - time: 0.75
+      value: 20
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 10
+    - time: 1
+      value: 15
+      inSlope: -20
+      outSlope: -20
+      tangentMode: 10
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  curveLengthInSeconds: 60
+  jitter: 5
+--- !u!4 &242063432
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 242063430}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 14.11, y: -2.75, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
 --- !u!4 &274593725 stripped
 Transform:
   m_PrefabParentObject: {fileID: 469180, guid: d7a0641d3a09538458e059adb079a946, type: 2}
@@ -220,13 +326,121 @@ Prefab:
       propertyPath: m_Name
       value: Grass (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: startPoint
+      value: 
+      objectReference: {fileID: 2015083890}
+    - target: {fileID: 0}
+      propertyPath: endPoint
+      value: 
+      objectReference: {fileID: 420522535}
+    - target: {fileID: 11441212, guid: d7a0641d3a09538458e059adb079a946, type: 2}
+      propertyPath: startPoint
+      value: 
+      objectReference: {fileID: 2015083890}
+    - target: {fileID: 11441212, guid: d7a0641d3a09538458e059adb079a946, type: 2}
+      propertyPath: endPoint
+      value: 
+      objectReference: {fileID: 420522535}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d7a0641d3a09538458e059adb079a946, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &340468179
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 340468181}
+  - 114: {fileID: 340468180}
+  m_Layer: 0
+  m_Name: Cloud4Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &340468180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 340468179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e18ca5b9358ff5489e53fed095bb109, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabToSpawn: {fileID: 455476, guid: 1674bf861aa947942ab61fd93d75a4e7, type: 2}
+  spawnCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 10
+      inSlope: 10
+      outSlope: 10
+      tangentMode: 10
+    - time: 0.5
+      value: 15
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 10
+    - time: 1
+      value: 10
+      inSlope: -10
+      outSlope: -10
+      tangentMode: 10
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  curveLengthInSeconds: 60
+  jitter: 5
+--- !u!4 &340468181
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 340468179}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.11, y: 3.83, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
 --- !u!4 &343192772 stripped
 Transform:
   m_PrefabParentObject: {fileID: 469180, guid: d7a0641d3a09538458e059adb079a946, type: 2}
   m_PrefabInternal: {fileID: 1775142430}
+--- !u!1 &420522534
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 420522535}
+  m_Layer: 0
+  m_Name: EndPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 5228209130450103505, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &420522535
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 420522534}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -9.61, y: -3.69, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 1960505817}
+  m_RootOrder: 17
 --- !u!1001 &477068961
 Prefab:
   m_ObjectHideFlags: 0
@@ -270,6 +484,22 @@ Prefab:
       propertyPath: m_Name
       value: Grass (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: startPoint
+      value: 
+      objectReference: {fileID: 2015083890}
+    - target: {fileID: 0}
+      propertyPath: endPoint
+      value: 
+      objectReference: {fileID: 420522535}
+    - target: {fileID: 11441212, guid: d7a0641d3a09538458e059adb079a946, type: 2}
+      propertyPath: startPoint
+      value: 
+      objectReference: {fileID: 2015083890}
+    - target: {fileID: 11441212, guid: d7a0641d3a09538458e059adb079a946, type: 2}
+      propertyPath: endPoint
+      value: 
+      objectReference: {fileID: 420522535}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d7a0641d3a09538458e059adb079a946, type: 2}
   m_IsPrefabParent: 0
@@ -389,6 +619,22 @@ Prefab:
       propertyPath: m_Name
       value: Grass (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: startPoint
+      value: 
+      objectReference: {fileID: 2015083890}
+    - target: {fileID: 0}
+      propertyPath: endPoint
+      value: 
+      objectReference: {fileID: 420522535}
+    - target: {fileID: 11441212, guid: d7a0641d3a09538458e059adb079a946, type: 2}
+      propertyPath: startPoint
+      value: 
+      objectReference: {fileID: 2015083890}
+    - target: {fileID: 11441212, guid: d7a0641d3a09538458e059adb079a946, type: 2}
+      propertyPath: endPoint
+      value: 
+      objectReference: {fileID: 420522535}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d7a0641d3a09538458e059adb079a946, type: 2}
   m_IsPrefabParent: 0
@@ -435,6 +681,22 @@ Prefab:
       propertyPath: m_Name
       value: Grass (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: startPoint
+      value: 
+      objectReference: {fileID: 2015083890}
+    - target: {fileID: 0}
+      propertyPath: endPoint
+      value: 
+      objectReference: {fileID: 420522535}
+    - target: {fileID: 11441212, guid: d7a0641d3a09538458e059adb079a946, type: 2}
+      propertyPath: startPoint
+      value: 
+      objectReference: {fileID: 2015083890}
+    - target: {fileID: 11441212, guid: d7a0641d3a09538458e059adb079a946, type: 2}
+      propertyPath: endPoint
+      value: 
+      objectReference: {fileID: 420522535}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d7a0641d3a09538458e059adb079a946, type: 2}
   m_IsPrefabParent: 0
@@ -481,6 +743,22 @@ Prefab:
       propertyPath: m_Name
       value: Grass (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: startPoint
+      value: 
+      objectReference: {fileID: 2015083890}
+    - target: {fileID: 0}
+      propertyPath: endPoint
+      value: 
+      objectReference: {fileID: 420522535}
+    - target: {fileID: 11441212, guid: d7a0641d3a09538458e059adb079a946, type: 2}
+      propertyPath: startPoint
+      value: 
+      objectReference: {fileID: 2015083890}
+    - target: {fileID: 11441212, guid: d7a0641d3a09538458e059adb079a946, type: 2}
+      propertyPath: endPoint
+      value: 
+      objectReference: {fileID: 420522535}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d7a0641d3a09538458e059adb079a946, type: 2}
   m_IsPrefabParent: 0
@@ -533,7 +811,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0.019607844}
+  m_BackGroundColor: {r: 0.9019608, g: 0.95686275, b: 0.98039216, a: 1}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -694,6 +972,81 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 0
   curveLengthInSeconds: 30
+  jitter: 0.25
+--- !u!1 &884738927
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 884738929}
+  - 114: {fileID: 884738928}
+  m_Layer: 0
+  m_Name: Mountain1Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &884738928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 884738927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e18ca5b9358ff5489e53fed095bb109, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabToSpawn: {fileID: 453334, guid: da2f4a9a333c69e4980c6c23da265d4a, type: 2}
+  spawnCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 15
+      inSlope: 20
+      outSlope: 20
+      tangentMode: 10
+    - time: 0.25
+      value: 20
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 10
+    - time: 0.5
+      value: 15
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 10
+    - time: 0.75
+      value: 20
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 10
+    - time: 1
+      value: 15
+      inSlope: -20
+      outSlope: -20
+      tangentMode: 10
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  curveLengthInSeconds: 60
+  jitter: 5
+--- !u!4 &884738929
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 884738927}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.31, y: -2.73, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
 --- !u!1001 &943678998
 Prefab:
   m_ObjectHideFlags: 0
@@ -737,6 +1090,22 @@ Prefab:
       propertyPath: m_Name
       value: Grass (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: startPoint
+      value: 
+      objectReference: {fileID: 2015083890}
+    - target: {fileID: 0}
+      propertyPath: endPoint
+      value: 
+      objectReference: {fileID: 420522535}
+    - target: {fileID: 11441212, guid: d7a0641d3a09538458e059adb079a946, type: 2}
+      propertyPath: startPoint
+      value: 
+      objectReference: {fileID: 2015083890}
+    - target: {fileID: 11441212, guid: d7a0641d3a09538458e059adb079a946, type: 2}
+      propertyPath: endPoint
+      value: 
+      objectReference: {fileID: 420522535}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d7a0641d3a09538458e059adb079a946, type: 2}
   m_IsPrefabParent: 0
@@ -787,6 +1156,22 @@ Prefab:
       propertyPath: m_Name
       value: Grass (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: startPoint
+      value: 
+      objectReference: {fileID: 2015083890}
+    - target: {fileID: 0}
+      propertyPath: endPoint
+      value: 
+      objectReference: {fileID: 420522535}
+    - target: {fileID: 11441212, guid: d7a0641d3a09538458e059adb079a946, type: 2}
+      propertyPath: startPoint
+      value: 
+      objectReference: {fileID: 2015083890}
+    - target: {fileID: 11441212, guid: d7a0641d3a09538458e059adb079a946, type: 2}
+      propertyPath: endPoint
+      value: 
+      objectReference: {fileID: 420522535}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d7a0641d3a09538458e059adb079a946, type: 2}
   m_IsPrefabParent: 0
@@ -895,6 +1280,22 @@ Prefab:
       propertyPath: m_Name
       value: Grass (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: startPoint
+      value: 
+      objectReference: {fileID: 2015083890}
+    - target: {fileID: 0}
+      propertyPath: endPoint
+      value: 
+      objectReference: {fileID: 420522535}
+    - target: {fileID: 11441212, guid: d7a0641d3a09538458e059adb079a946, type: 2}
+      propertyPath: startPoint
+      value: 
+      objectReference: {fileID: 2015083890}
+    - target: {fileID: 11441212, guid: d7a0641d3a09538458e059adb079a946, type: 2}
+      propertyPath: endPoint
+      value: 
+      objectReference: {fileID: 420522535}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d7a0641d3a09538458e059adb079a946, type: 2}
   m_IsPrefabParent: 0
@@ -941,6 +1342,22 @@ Prefab:
       propertyPath: m_Name
       value: Grass (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: startPoint
+      value: 
+      objectReference: {fileID: 2015083890}
+    - target: {fileID: 0}
+      propertyPath: endPoint
+      value: 
+      objectReference: {fileID: 420522535}
+    - target: {fileID: 11441212, guid: d7a0641d3a09538458e059adb079a946, type: 2}
+      propertyPath: startPoint
+      value: 
+      objectReference: {fileID: 2015083890}
+    - target: {fileID: 11441212, guid: d7a0641d3a09538458e059adb079a946, type: 2}
+      propertyPath: endPoint
+      value: 
+      objectReference: {fileID: 420522535}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d7a0641d3a09538458e059adb079a946, type: 2}
   m_IsPrefabParent: 0
@@ -1030,6 +1447,154 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 469180, guid: d7a0641d3a09538458e059adb079a946, type: 2}
   m_PrefabInternal: {fileID: 943678998}
+--- !u!1 &1649684170
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1649684172}
+  - 114: {fileID: 1649684171}
+  m_Layer: 0
+  m_Name: Mountain3Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1649684171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1649684170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e18ca5b9358ff5489e53fed095bb109, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabToSpawn: {fileID: 453334, guid: da2f4a9a333c69e4980c6c23da265d4a, type: 2}
+  spawnCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 15
+      inSlope: 20
+      outSlope: 20
+      tangentMode: 10
+    - time: 0.25
+      value: 20
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 10
+    - time: 0.5
+      value: 15
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 10
+    - time: 0.75
+      value: 20
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 10
+    - time: 1
+      value: 15
+      inSlope: -20
+      outSlope: -20
+      tangentMode: 10
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  curveLengthInSeconds: 60
+  jitter: 5
+--- !u!4 &1649684172
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1649684170}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 11.89, y: -2.25, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+--- !u!1 &1658990902
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1658990904}
+  - 114: {fileID: 1658990903}
+  m_Layer: 0
+  m_Name: Cloud5Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1658990903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1658990902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e18ca5b9358ff5489e53fed095bb109, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabToSpawn: {fileID: 494198, guid: 8fd87477d01b2fe4ea04d252d7d77c8c, type: 2}
+  spawnCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 15
+      inSlope: 20
+      outSlope: 20
+      tangentMode: 10
+    - time: 0.25
+      value: 20
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 10
+    - time: 0.5
+      value: 15
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 10
+    - time: 0.75
+      value: 20
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 10
+    - time: 1
+      value: 15
+      inSlope: -20
+      outSlope: -20
+      tangentMode: 10
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  curveLengthInSeconds: 60
+  jitter: 5
+--- !u!4 &1658990904
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1658990902}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 12.86, y: 2.28, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
 --- !u!1 &1671739638
 GameObject:
   m_ObjectHideFlags: 0
@@ -1197,6 +1762,22 @@ Prefab:
       propertyPath: m_Name
       value: Grass (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: startPoint
+      value: 
+      objectReference: {fileID: 2015083890}
+    - target: {fileID: 0}
+      propertyPath: endPoint
+      value: 
+      objectReference: {fileID: 420522535}
+    - target: {fileID: 11441212, guid: d7a0641d3a09538458e059adb079a946, type: 2}
+      propertyPath: startPoint
+      value: 
+      objectReference: {fileID: 2015083890}
+    - target: {fileID: 11441212, guid: d7a0641d3a09538458e059adb079a946, type: 2}
+      propertyPath: endPoint
+      value: 
+      objectReference: {fileID: 420522535}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d7a0641d3a09538458e059adb079a946, type: 2}
   m_IsPrefabParent: 0
@@ -1326,6 +1907,22 @@ Prefab:
       propertyPath: m_Name
       value: Grass (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: startPoint
+      value: 
+      objectReference: {fileID: 2015083890}
+    - target: {fileID: 0}
+      propertyPath: endPoint
+      value: 
+      objectReference: {fileID: 420522535}
+    - target: {fileID: 11441212, guid: d7a0641d3a09538458e059adb079a946, type: 2}
+      propertyPath: startPoint
+      value: 
+      objectReference: {fileID: 2015083890}
+    - target: {fileID: 11441212, guid: d7a0641d3a09538458e059adb079a946, type: 2}
+      propertyPath: endPoint
+      value: 
+      objectReference: {fileID: 420522535}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d7a0641d3a09538458e059adb079a946, type: 2}
   m_IsPrefabParent: 0
@@ -1372,6 +1969,22 @@ Prefab:
       propertyPath: m_Name
       value: Grass (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: startPoint
+      value: 
+      objectReference: {fileID: 2015083890}
+    - target: {fileID: 0}
+      propertyPath: endPoint
+      value: 
+      objectReference: {fileID: 420522535}
+    - target: {fileID: 11441212, guid: d7a0641d3a09538458e059adb079a946, type: 2}
+      propertyPath: startPoint
+      value: 
+      objectReference: {fileID: 2015083890}
+    - target: {fileID: 11441212, guid: d7a0641d3a09538458e059adb079a946, type: 2}
+      propertyPath: endPoint
+      value: 
+      objectReference: {fileID: 420522535}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d7a0641d3a09538458e059adb079a946, type: 2}
   m_IsPrefabParent: 0
@@ -1426,6 +2039,22 @@ Prefab:
       propertyPath: m_Name
       value: Grass (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: startPoint
+      value: 
+      objectReference: {fileID: 2015083890}
+    - target: {fileID: 0}
+      propertyPath: endPoint
+      value: 
+      objectReference: {fileID: 420522535}
+    - target: {fileID: 11441212, guid: d7a0641d3a09538458e059adb079a946, type: 2}
+      propertyPath: startPoint
+      value: 
+      objectReference: {fileID: 2015083890}
+    - target: {fileID: 11441212, guid: d7a0641d3a09538458e059adb079a946, type: 2}
+      propertyPath: endPoint
+      value: 
+      objectReference: {fileID: 420522535}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d7a0641d3a09538458e059adb079a946, type: 2}
   m_IsPrefabParent: 0
@@ -1571,12 +2200,109 @@ Transform:
   - {fileID: 1553892464}
   - {fileID: 2008758785}
   - {fileID: 1765369644}
+  - {fileID: 2093450163}
+  - {fileID: 2015083890}
+  - {fileID: 420522535}
   m_Father: {fileID: 0}
   m_RootOrder: 2
 --- !u!4 &2008758785 stripped
 Transform:
   m_PrefabParentObject: {fileID: 469180, guid: d7a0641d3a09538458e059adb079a946, type: 2}
   m_PrefabInternal: {fileID: 282346753}
+--- !u!1 &2015083889
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2015083890}
+  m_Layer: 0
+  m_Name: StartPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 1638116407661442457, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2015083890
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2015083889}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 9.59, y: -3.69, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 1960505817}
+  m_RootOrder: 16
+--- !u!1001 &2093450162
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1960505817}
+    m_Modifications:
+    - target: {fileID: 469180, guid: d7a0641d3a09538458e059adb079a946, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -10.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 469180, guid: d7a0641d3a09538458e059adb079a946, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -4.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 469180, guid: d7a0641d3a09538458e059adb079a946, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 469180, guid: d7a0641d3a09538458e059adb079a946, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 469180, guid: d7a0641d3a09538458e059adb079a946, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 469180, guid: d7a0641d3a09538458e059adb079a946, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 469180, guid: d7a0641d3a09538458e059adb079a946, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 469180, guid: d7a0641d3a09538458e059adb079a946, type: 2}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 165486, guid: d7a0641d3a09538458e059adb079a946, type: 2}
+      propertyPath: m_Name
+      value: Grass (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: startPoint
+      value: 
+      objectReference: {fileID: 2015083890}
+    - target: {fileID: 0}
+      propertyPath: endPoint
+      value: 
+      objectReference: {fileID: 420522535}
+    - target: {fileID: 11441212, guid: d7a0641d3a09538458e059adb079a946, type: 2}
+      propertyPath: startPoint
+      value: 
+      objectReference: {fileID: 2015083890}
+    - target: {fileID: 11441212, guid: d7a0641d3a09538458e059adb079a946, type: 2}
+      propertyPath: endPoint
+      value: 
+      objectReference: {fileID: 420522535}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d7a0641d3a09538458e059adb079a946, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &2093450163 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 469180, guid: d7a0641d3a09538458e059adb079a946, type: 2}
+  m_PrefabInternal: {fileID: 2093450162}
 --- !u!4 &2129139773 stripped
 Transform:
   m_PrefabParentObject: {fileID: 469180, guid: d7a0641d3a09538458e059adb079a946, type: 2}
