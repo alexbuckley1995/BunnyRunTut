@@ -29,6 +29,11 @@ public class bunnycontroller : MonoBehaviour {
     void Update()
     {
 
+        if (Input.GetKeyDown(KeyCode.Escape)) //Check if while the game is playing has the user pressed the escape key.
+        {
+            Application.LoadLevel("Title"); //While the game is playing if we press the escape key we will load the title screen.
+        }
+
         if (bunnyHurtTime == -1) //When the game starts and whilst it is running it is going to do the button checking and animation setting (as when the game starts the bunnyHurtTime is set to -1), up until we actually collide with something (when we set bunnyHurtTime to a non -1 value). This if statement is to ensure that if the bunny is dead (i.e. bunnyHurtTime is not -1) then it cannot jump as we dont want that.
         {
 
