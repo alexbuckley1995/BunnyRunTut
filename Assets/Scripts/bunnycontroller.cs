@@ -12,6 +12,9 @@ public class bunnycontroller : MonoBehaviour {
     public Text scoreText;
     private float startTime;
     private int jumpsLeft = 2; //The number of jumps we have left which is set to 2 initially 
+    public AudioSource jumpSfx;
+    public AudioSource deathSfx;
+
 
 	// Use this for initialization
 	void Start () {
@@ -47,6 +50,8 @@ public class bunnycontroller : MonoBehaviour {
                 }
                 jumpsLeft--; //Reduce the jumpsLeft value by 1
 
+                jumpSfx.Play();  //Trigger the jump sound effect to play when the bunny jumps
+
             }
             myAnim.SetFloat("vVelocity", myrigidbody.velocity.y); //SetFloat method lets us set any float parameter we have set on the animator. I am calling the parameter vVelocity, and we tie it to the rigidbody's velocity in the y direction. The rigidbody is  controlling the physics. What this does in every frame update we are going to on the animator set its vVelocity parameter to the current velocity of the bunny as he is either falling down or jumping up. 
 
@@ -80,6 +85,8 @@ public class bunnycontroller : MonoBehaviour {
             myrigidbody.velocity = Vector2.zero; //RigidBody controls the physics for the bunny this cancels out any motion it has. So when the bunny coliides set its velocity movement to zero.
             myrigidbody.AddForce(transform.up * bunnyjumpforce); //Trigger it to jump up in the air
             myCollider.enabled = false; //Now we have the myCollider object in the start method and disable the collider 
+
+            deathSfx.Play(); //Trigger the death sound effect to play when the bunny collides with the enemy object (cactus)
         }
 
         else if (collision.collider.gameObject.layer ==LayerMask.NameToLayer("Ground")) //else if the object we've collided with (collision.collider.gameObject.layer) is equal to ground) then reset our jumpsLeft. 
