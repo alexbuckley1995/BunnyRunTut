@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI; //Importing a package from the subpackage called UI of the base UnityEngine package
+using UnityEngine.SceneManagement;
 
 public class bunnycontroller : MonoBehaviour {
 
@@ -31,7 +32,7 @@ public class bunnycontroller : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.Escape)) //Check if while the game is playing has the user pressed the escape key.
         {
-            Application.LoadLevel("Title"); //While the game is playing if we press the escape key we will load the title screen.
+            SceneManager.LoadScene("Title"); //While the game is playing if we press the escape key we will load the title screen.
         }
 
         if (bunnyHurtTime == -1) //When the game starts and whilst it is running it is going to do the button checking and animation setting (as when the game starts the bunnyHurtTime is set to -1), up until we actually collide with something (when we set bunnyHurtTime to a non -1 value). This if statement is to ensure that if the bunny is dead (i.e. bunnyHurtTime is not -1) then it cannot jump as we dont want that.
@@ -66,7 +67,8 @@ public class bunnycontroller : MonoBehaviour {
         {
             if (Time.time > bunnyHurtTime + 2) //If the current game time is 2 seconds after we collided then load the level
             {
-                Application.LoadLevel(Application.loadedLevel); //Application object is a global class that provides access to application functionality like loadlevel (which allows you to load a specific scene of the game). 
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name); //Get the name of the last scene loaded by the SceneManager API and load it again. 
+       
             }
         }
     }

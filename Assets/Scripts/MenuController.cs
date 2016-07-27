@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class MenuController : MonoBehaviour
 {
@@ -26,7 +27,7 @@ public class MenuController : MonoBehaviour
 
     public void StartGame() //Public method so we can call it, with void return type 
     {
-        Application.LoadLevel("Game"); //This method when called will use the LoadLevel method on the Application object to load our game scene. 
+        SceneManager.LoadScene("Game"); //This method when called will use the SceneManagemer.LoadScene package to load the game scene. 
     }
 
     public void ToggleSound() //Call this when we click the mute button
