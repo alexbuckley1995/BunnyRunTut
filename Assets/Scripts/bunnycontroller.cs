@@ -37,7 +37,7 @@ public class bunnycontroller : MonoBehaviour {
         if (bunnyHurtTime == -1) //When the game starts and whilst it is running it is going to do the button checking and animation setting (as when the game starts the bunnyHurtTime is set to -1), up until we actually collide with something (when we set bunnyHurtTime to a non -1 value). This if statement is to ensure that if the bunny is dead (i.e. bunnyHurtTime is not -1) then it cannot jump as we dont want that.
         {
 
-            if (Input.GetButtonUp("Jump") && jumpsLeft >0) //If the jump button (space button) has been pressed and jumpsLeft>0 (in other words we have jumpsLeft) then the bunny is allowed to jump by adding force below. 
+            if ((Input.GetButtonUp("Jump") || Input.GetButtonUp("Fire1")) && jumpsLeft >0) //If the jump button (space button) has been pressed or if the user has clicked on screen with mouse or (tapped on screen of mobile devices) and jumpsLeft>0 (in other words we have jumpsLeft) then the bunny is allowed to jump by adding force below. 
             {
 
                 if (myrigidbody.velocity.y <0) //Check if the bunnys velocity is <0 (i.e. falling).
